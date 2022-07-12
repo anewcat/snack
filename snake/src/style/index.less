@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+body{
+    font:20px Courier bold;
+}
+.all{
+    width:360px;
+    height:420px;
+    border:10px black solid;
+    border-radius: 25px;
+    background-color: #d6cfe2;
+    margin:50px auto;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+// 游戏舞台
+.main{
+    width:304px;
+    height:304px;
+    border:2px black solid;
+    position:relative;
+}
+#snack{
+    &>div{
+        width:10px;
+        height:10px;
+        border:1px #d6cfe2 solid;
+        background-color: black;
+        position:absolute;
+    }
+}
+#food{
+    width:10px;
+    height:10px;
+    position:absolute;
+    left:40px;
+    top:60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    &>div{
+        width:4px;
+        height:4px;
+        background-color: black;
+        transform: rotate(45deg);
+      
+    }
+
+}
+.board{
+    width:300px;
+    display:flex;
+    justify-content: space-between;
+}
